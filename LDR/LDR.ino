@@ -1,13 +1,11 @@
-#include <SoftwareSerial.h>
+#include
 
-int sensorPin = A0; // select the input pin for the LDR
+int sensorPin = A0; 
 
-int sensorValue = 0; // variable to store the value coming from the sensor
-
+int sensorValue = 0; 
 int led = 3;
 
-void setup() { // declare the ledPin as an OUTPUT:
-
+void setup() { 
 pinMode(led, OUTPUT);
 
 Serial.begin(9600); }
@@ -15,8 +13,6 @@ Serial.begin(9600); }
 void loop()
 
 {
-
-Serial.println("Welcome to TechPonder LDR Tutorial");
 
 sensorValue = analogRead(sensorPin);
 
